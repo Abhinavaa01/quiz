@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body onload="startcount()">
+    <div id="sam">Hello World!</div>
+    <a class="btn" onclick="hide()">click me</a>
+    <input type="text" id="txt">
+    <script>
+        function hide() {
+            document.getElementById("sam").style.display = "none";
+        }
+            
+    var c = 0;
+    var t;
+    var timer_is_on = 0;
+
+function timedCount() {
+    document.getElementById("txt").value = c;
+    c = c + 1;
+    t = setTimeout(timedCount, 1000);
+}
+
+function startcount() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+}
+}
+
+    </script>
+</body>
+</html>

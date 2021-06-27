@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style 5.0.css">
+    <title>Quiz 5.0</title>
+</head>
+<body>
+
+    <div id="ins">
+    <div class="ins"  style="font-size: 30px;">Want to check your Maths?<br><br>Let's Play a quick Quiz!</div>
+    <div class="ins"  style="font-size: 45px;"><B>Instructions:-</B></div>
+    <div class="ins">1. Quiz consists of 10 questions each of equal weightage.<br>
+        2. Each question consists of +1 mark if answered correct, and no deduction if not answered.<br>
+        3. Maximum marks are 10.<br>
+        4. Total time given to answer is 100 seconds . If not answered under time the quiz will be auto submitted and no mark will be given for unanswered questions.<br>
+        5. Do not Refresh the page during quiz.</div><br><br>
+    <button type="Start"  class="btn" onclick="startcount(); startquiz(); showTimer()">Start Quiz</button>
+    </div>
+
+<div id="time"><input type="text" class="time" id="txt"></div>
+
+
+<div id="q1">
+    <div class="q1" style="font-size: 45px;">Q1. 75*7= ?</div>
+        <div class="opt1">
+        <label class="container"><input type="radio" name="question1" id="wrong1" >495</label><br>
+        <label class="container"><input type="radio" name="question1" id="correct1" >525</label><br>
+        <label class="container"><input type="radio" name="question1" id="wrong1" >515</label><br>
+        <label class="container"><input type="radio" name="question1" id="wrong1" >505</label><br><br>
+        </div>
+        <button class="btn2" onclick="window.location.reload()">Back to Start</button>
+        <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+
+    <div id="q2">
+        <div class="q2" style="font-size: 45px;">Q2. 24*8=?</div>
+            <div class="opt2">
+                <label class="container"><input type="radio" name="question2" id="wrong1" >144</label><br>
+                <label class="container"><input type="radio" name="question2" id="wrong1" >168</label><br>
+                <label class="container"><input type="radio" name="question2" id="correct2" >192</label><br>
+                <label class="container"><input type="radio" name="question2" id="wrong1" >178</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q3">
+        <div class="q3" style="font-size: 45px;">Q3. 99008+55402=?</div>
+            <div class="opt3">
+                <label class="container"><input type="radio" name="question3" id="correct3" >154410</label><br>
+                <label class="container"><input type="radio" name="question3" id="wrong1" >144410</label><br>
+                <label class="container"><input type="radio" name="question3" id="wrong1" >145410</label><br>
+                <label class="container"><input type="radio" name="question3" id="wrong1" >145510</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+    
+    
+    <div id="q4">
+        <div class="q4" style="font-size: 45px;">Q4. 6!=?</div>
+            <div class="opt4">
+                <label class="container"><input type="radio" name="question4" id="wrong1" >120</label><br>
+                <label class="container"><input type="radio" name="question4" id="correct4" >720</label><br>
+                <label class="container"><input type="radio" name="question4" id="wrong1" >1440</label><br>
+                <label class="container"><input type="radio" name="question4" id="wrong1" >600</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+    
+    
+    <div id="q5">
+        <div class="q5" style="font-size: 45px;">Q5. 4907/7=?</div>
+            <div class="opt5">
+                <label class="container"><input type="radio" name="question5" id="wrong1" >71</label><br>
+                <label class="container"><input type="radio" name="question5" id="wrong1" >771</label><br>
+                <label class="container"><input type="radio" name="question5" id="wrong1" >707</label><br>
+                <label class="container"><input type="radio" name="question5" id="correct5" >701</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q6">
+        <div class="q6" style="font-size: 45px;">Q6. 5*4+16/4?</div>
+            <div class="opt6">
+                <label class="container"><input type="radio" name="question6" id="wrong1" >9</label><br>
+                <label class="container"><input type="radio" name="question6" id="correct6" >24</label><br>
+                <label class="container"><input type="radio" name="question6" id="wrong1" >25</label><br>
+                <label class="container"><input type="radio" name="question6" id="wrong1" >40</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q7">
+        <div class="q7" style="font-size: 45px;">Q7. 1*6+18/3?</div>
+            <div class="opt7">
+                <label class="container"><input type="radio" name="question7" id="correct7" >12</label><br>
+                <label class="container"><input type="radio" name="question7" id="wrong1" >8</label><br>
+                <label class="container"><input type="radio" name="question7" id="wrong1" >24</label><br>
+                <label class="container"><input type="radio" name="question7" id="wrong1" >6</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q8">
+        <div class="q8" style="font-size: 45px;">Q8. 2*3*8*6*7*9=?</div>
+            <div class="opt8">
+                <label class="container"><input type="radio" name="question8" id="wrong1" >18244</label><br>
+                <label class="container"><input type="radio" name="question8" id="wrong1" >18140</label><br>
+                <label class="container"><input type="radio" name="question8" id="wrong1" >18442</label><br>
+                <label class="container"><input type="radio" name="question8" id="correct8" >18144</label><br><br> 
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q9">
+        <div class="q9" style="font-size: 45px;">Q9. 50*7*3*68*0=?</div>
+            <div class="opt9">
+                <label class="container"><input type="radio" name="question9" id="wrong9" >71400</label><br>
+                <label class="container"><input type="radio" name="question9" id="wrong9" >714000</label><br>
+                <label class="container"><input type="radio" name="question9" id="correct9" >0</label><br>
+                <label class="container"><input type="radio" name="question9" id="wrong9" >7140</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="ques()">Next</button>
+    </div>
+
+
+
+    <div id="q10">
+        <div class="q10" style="font-size: 45px;">Q10. 99999+11101=?</div>
+            <div class="opt10">
+            <label class="container"><input type="radio" name="question10" id="correct10" >111100</label><br>
+            <label class="container"><input type="radio" name="question10" id="wrong10" >11100</label><br>
+            <label class="container"><input type="radio" name="question10" id="wrong10" >11110</label><br>
+            <label class="container"><input type="radio" name="question10" id="wrong10" >111010</label><br><br>
+            </div>
+            <button class="btn2" onclick="ques()">Previous</button>
+            <button class="btn2" onclick="result()">Submit</button>
+    </div>
+    <div class="sub"><button id="Submit" class="btn" onclick="result()">Submit Quiz</button></div>
+
+
+
+
+
+   <script src="Quiz 5.0.js"></script>
+</body>
+</html>
